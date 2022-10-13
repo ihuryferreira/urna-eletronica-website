@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.CorFundo {
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #b2ccec,
+    #a9c5eb,
+    #a0bfeb,
+    #98b8ea,
+    #90b1e9,
+    #85b6ef,
+    #78baf4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.header .cinza {
+  width: 695px;
+  height: 50px;
+  background-color: #c2c2c2;
+  display: block;
+  position: relative;
+  left: 5px;
+  top: 20px;
+  border-radius: 10px;
+}
+.header .cinza::after {
+  content: "";
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 15px;
+  height: 58px;
+  transform: rotate(5deg);
+  top: 0px;
+  left: -2px;
+  border-radius: 5px 0px 0px 10px;
+}
+.header .cinza::before {
+  content: "";
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 15px;
+  height: 54px;
+  top: 1px;
+  right: -5px;
+  border-radius: 8px;
+  transform: rotate(-9deg);
+}
+.urna {
+  width: 702px;
+  height: auto;
+  max-height: 545.3px;
+  background-color: #fff;
+  border-radius: 17px 0px 0px 0px;
+}
+.urna .display {
+  position: relative;
+  width: 300px;
+  height: 270px;
+  background-color: #dfe4f1;
+  border: 1px solid black;
+  top: 120px;
+  left: 70px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 5px #c2c2c2, 0px 0px 0px 8px black;
+}
+.display h3 {
+  position: relative;
+  top: 50px;
+  left: 80px;
+  font-size: 36px;
+}
+.display .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 20px;
+  height: 220px;
+}
+.display .candidado {
+  display: block;
+  font-size: 16px;
+}
+.display .candidado #title-text {
+  font-size: 1em;
+}
+
+.display .candidado #presidente {
+  padding-top: 20px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.display .candidado #fotoPresidente {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 38%;
+  margin-top: 10px;
+}
+
+.display .candidado h2 {
+  font-size: 1.1em;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.display .input .inp {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 60px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.keys {
+  display: inline-block;
+  position: relative;
+  left: 390px;
+  bottom: 162px;
+  padding: 10px;
+}
+.caixaBox {
+  display: inline-flex;
+  width: 245px;
+  height: 90px;
+  background-color: #e6e7e9;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0px 0px 0px 6px #e9e9e9b4, 0px 0px 0px 7px rgb(12, 12, 12);
+}
+.img1 {
+  display: block;
+  width: 65px;
+  margin: 10px auto 0px auto;
+  padding-bottom: 10px;
+}
+.title-text {
+  width: 180px;
+  font-size: 30px;
+  text-align: center;
+}
+.urna .liha-left {
+  display: block;
+  position: relative;
+}
+.urna .liha-left::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 545px;
+  background-color: white;
+  transform: rotate(2deg);
+  left: -9px;
+  top: -0px;
+  border-radius: 20px 20px 0px 20px;
+}
+.urna .liha-left::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 544px;
+  background-color: white;
+  transform: rotate(-2deg);
+  right: -20px;
+  top: 1px;
+  border-radius: 20px 8px 20px 0.5231px;
+  /* box-shadow: 5px -1px 5px rgba(0, 0, 0, 0.4); */
+}
+.botoes {
+  display: block;
+  position: relative;
+  top: 10px;
+  right: -13px;
+  width: 220px;
+  height: 310px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.botoes .charKey {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 3%;
+  background-color: rgb(37, 36, 36);
+  color: white;
+}
+.botoes .charKey:active {
+  background-color: black;
+}
+.botoes .center {
+  margin-left: 65px;
+}
+
+.botoes .botoes-com-funcao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.botoes .botoes-com-funcao #nullo,
+#clear,
+#confirmar {
+  width: 75px;
+  height: 36px;
+  padding: 2px;
+}
+
+#nullo {
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#nullo:active {
+  background-color: rgb(243, 231, 231);
+}
+
+#clear {
+  background-color: rgb(255, 115, 0);
+  font-weight: bold;
+}
+
+#clear:active {
+  background-color: rgba(255, 102, 0, 0.774);
+}
+
+#confirmar {
+  background-color: rgba(49, 230, 49, 0.863);
+  font-weight: bold;
+}
+
+#confirmar:active {
+  background-color: green;
+}
+.footer {
+  border-top: 1px solid transparent;
+  min-height: 30vh;
+  background-color: white;
+  background-image: radial-gradient(
+    circle,
+    #b2ccec,
+    #a9c5eb,
+    #a0bfeb,
+    #98b8ea,
+    #90b1e9,
+    #85b6ef,
+    #78baf4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+}
+.caixa-load {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 0px;
+  transform: scale(2);
+}
+.caixa-load h5 {
+  margin-top: 55px;
+}
+#load {
+  width: 30px;
+  height: 30px;
+  border: 6px solid white;
+  border-top-color: blue;
+  animation: load 1s infinite;
+  border-radius: 50%;
+}
+@keyframes load {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.footer h2 {
+  text-align: center;
+}
